@@ -2,23 +2,23 @@
 iOS Messaging Scenario For The Web - OPEN SOURCE
 -------------------------------------------------------
 
-Developer: Steven Basher
-Version: 1.0
-Date: 08.01.16
+Developer: Steven Basher <br/>
+Version: 1.0 <br/>
+Date: 08.01.16 <br/>
 
 -------------------------------------------------------
 
-PREVIEW
+##PREVIEW
 
 ![alt tag](./images/preview.png)
 
-CONTENTS
+##CONTENTS
 
-./index.php - The PHP page containing the scenario and corresponding logic
-./response.php - An example response script to handle user's input
-./images/iphone6s.png - Background image for the scenario (Credit: http://p-px.com/iphone-6s/)
+./index.php - The PHP page containing the scenario and corresponding logic <br/>
+./response.php - An example response script to handle user's input <br/>
+./images/iphone6s.png - Background image for the scenario (Credit: http://p-px.com/iphone-6s/) <br/>
 
-USAGE
+##USAGE
 
 This is a text / messaging scenario which is useful for prototyping iOS text-based apps, creating a UX for a chatbot or any other reason you may have! Upload the files to a server and visit index.php for a demonstration. It is incredibly lightweight and I have documented the code throughout so it should be very easy to edit to your liking.
 
