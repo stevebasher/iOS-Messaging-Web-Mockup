@@ -11,18 +11,21 @@
 //Remove punctuation and convert to uppercase to make matching easier.
 function removePunc($str) {
 	$str = preg_replace('/[[:punct:]]/uis', ' ', $str);
-	$str = strtoupper($str);
+	$str = preg_replace('/\s\s+/', ' ', $str);
+    $str = (IS_MB_ENABLED) ? mb_strtoupper($str) : strtoupper($str);
+    $str = trim($str);
 	return $str;
 }
 
-
+//Basic respond function, you must name your function respond() for it to work in the program.
 function respond($str) {
 	$str = removePunc($str);
+
 	switch ($str) {
 		//WHAT TO SAY STRAIGHT AWAY WHEN LOADED
 		case 'INITIATE':
 			$say = "Why hello there. #l";
-			$say .= "My name is Bob, feel free to use and customise me as you wish!";
+			$say .= "My name is Bob, feel free to use and customise this scenario as you wish!";
 			break;
 
 		//POSSIBLE (VERY BASIC) WAY TO DEAL WITH RESPONSES
@@ -35,7 +38,8 @@ function respond($str) {
 			break;
 
 		case 'WHO MADE YOU':
-			$say = "Steve Basher, what a legend...";
+			$say = "Well that's a tad personal... #l";
+			$say .= "But if you must know, his name is Steve Basher, check out his <a href='https://github.com/stevebasher/iOS-Messaging-Web-Mockup'>GitHub</a>!";
 			break;
 		
 		//RETURN A RANDOM 'I DONT UNDERSTAND' RESPONSE:

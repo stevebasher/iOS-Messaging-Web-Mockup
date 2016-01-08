@@ -12,7 +12,7 @@
 //INCLUDES
 //YOU MUST CREATE AND INCLUDE A RESPOND FILE TO DEAL WITH THE USER RESPONSES, I HAVE INCLUDED A VERY BASIC ONE TO SHOW HOW IT CAN EASILY BE DONE.
 //NOTE: Adding #l in the respond string splits the reply onto multiple bubbles, as would happen in a normal text conversation. 
-include 'respond.php'
+include 'respond.php';
 
 
 //VARIABLES - Change as you wish.
